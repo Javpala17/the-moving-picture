@@ -23,8 +23,12 @@ header {
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     position: static;
+    top: 0;
+    z-index: 1000;
 }
-
+header {
+    margin-bottom: 3rem;
+}
 header h1 {
     font-size: 3rem;
     color: #fff;
@@ -221,7 +225,6 @@ section a {
     border-left-color: #6a3fff;
 }
 
-/* Responsive */
 @media screen and (max-width: 768px) {
     .imax70mm h2, .imax-comparison h2, .imax-digital h2 {
         font-size: 1.8rem;
@@ -229,5 +232,4 @@ section a {
     .imax70mm p, .imax-comparison p, .imax-digital p {
         font-size: 1rem;
     }
-
 }
