@@ -1,0 +1,183 @@
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #0f1c24;
+  color: #e6e1dc;
+  line-height: 1.7;
+}
+
+header {
+  padding: 2.5rem 1rem 2rem;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    #162a36,
+    #0f1c24
+  );
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header h1 {
+  margin: 0 0 1.5rem;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  color: #c4b7aa;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.1rem;
+  transition: color 0.25s ease, border-color 0.25s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-item:hover {
+  color: #e6b65c;
+  border-bottom: 1px solid #e6b65c;
+}
+
+section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2.5rem 2rem;
+  background-color: rgba(255,255,255,0.02);
+  border-left: 3px solid rgba(230,182,92,0.4);
+}
+
+#details {
+  background-color: rgba(255,255,255,0.035);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  color: #e6b65c;
+}
+
+h2 + img {
+  margin-top: 1.2rem;
+}
+
+p {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  color: #e2ddd7;
+}
+
+.logo {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.example {
+  display: block;
+  margin: 2rem auto 1rem;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.example:hover {
+  transform: scale(1.015);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+a {
+  color: inherit;
+}
+
+
+body > h2 {
+  max-width: 900px;
+  margin: 4rem auto 1.5rem;
+  padding: 0 2rem;
+}
+
+body > p {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.3rem;
+  }
+
+  .row {
+    grid-auto-flow: row;
+    gap: 12px;
+  }
+
+  section {
+    margin: 3rem 1rem;
+    padding: 2rem 1.5rem;
+  }
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("grain.png");
+  background-repeat: repeat;
+  opacity: 0.035;
+  z-index: 9999;
+}
+.format {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2.5rem 2rem;
+  background-color: rgba(255,255,255,0.025);
+  border-left: 4px solid;
+}
+
+.standard {
+  border-color: #c4b7aa;
+}
+.vistavision {
+  border-color: #6aa6b8;
+}
+.reversal {
+  border-color: #c45b4b;
+}
+.techniscope {
+  border-color: #b89a5a;
+}
+
+.example {
+  border: 1px solid rgba(255,255,255,0.15);
+  background-color: rgba(0,0,0,0.2);
+  padding: 6px;
+}
