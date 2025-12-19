@@ -22,9 +22,7 @@ header {
     background: linear-gradient(to right, #120f3b, #240f5a);
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: static;
 }
 
 header h1 {
@@ -231,4 +229,5 @@ section a {
     .imax70mm p, .imax-comparison p, .imax-digital p {
         font-size: 1rem;
     }
+
 }
